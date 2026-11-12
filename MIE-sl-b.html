@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Краткое руководство по славянизированной кириллической орфографии MIE-sl.">
+<title>Краткое руководство MIE-sl — кириллическая орфография</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&amp;family=Carlito:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+
+<style>@page { size: A4; margin: 20mm 18mm 20mm 20mm; }
+:root {
+  --ink: #1b1b1b; --soft: #555; --rule: #9a9a9a; --ie: #13325e; --tint: #f1f3f6; --tint2: #f7f4ec;
+}
+html { font-size: 11pt; }
+body {
+  font-family: "Caladea", "Ca mbria", "Tinos", "Times New Roman", serif;
+  color: var(--ink); background: #fff; line-height: 1.45;
+  max-width: 172mm; margin: 0 auto; padding: 0 4mm;
+  hyphens: auto; -webkit-hyphens: auto;
+}
+p { margin: 0 0 0.55em 0; text-align: justify; }
+h1, h2, h3, h4 { font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; line-height: 1.2; break-after: avoid; page-break-after: avoid; }
+h1 { font-size: 22pt; margin: 0 0 0.8em 0; text-align: center; break-before: page; page-break-before: always; padding-top: 30mm; }
+h1 .pn { display: block; font-size: 12pt; letter-spacing: 0.25em; text-transform: uppercase; color: var(--soft); margin-bottom: 0.6em; }
+h2 { font-size: 16pt; margin: 0 0 0.6em 0; padding-bottom: 0.2em; border-bottom: 1.5px solid var(--ink); break-before: page; page-break-before: always; }
+h2 .ln { display: block; font-size: 10pt; letter-spacing: 0.15em; text-transform: uppercase; color: var(--soft); font-weight: normal; }
+h3 { font-size: 12.5pt; margin: 1.1em 0 0.45em 0; }
+h4 { font-size: 11pt; margin: 0.9em 0 0.35em 0; }
+.ie { color: var(--ie); font-family: "Caladea", "Cambria", "Tinos", "Times New Roman", serif; hyphens: manual; -webkit-hyphens: manual; }
+.ie b { color: #8a1c1c; font-weight: bold; }
+.lat { font-style: italic; color: var(--soft); font-size: 0.92em; }
+.tr { font-style: italic; }
+.small { font-size: 9.5pt; color: var(--soft); }
+.center { text-align: center; }
+
+/* Титул */
+.title { text-align: center; padding-top: 45mm; break-after: page; page-break-after: always; }
+.title .t1 { font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-size: 28pt; font-weight: bold; margin: 0 0 0.3em 0; text-align: center; }
+.title .t2 { font-size: 15pt; margin: 0 0 2.5em 0; text-align: center; }
+.title .t3 { font-size: 20pt; color: var(--ie); margin: 0 0 2.5em 0; text-align: center; }
+.title .t4 { font-size: 11pt; color: var(--soft); text-align: center; }
+
+/* Оглавление */
+.tocpage { break-after: page; page-break-after: always; }
+.tocpage .t1 { font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-size: 18pt; margin-bottom: 1em; }
+.toc { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 8mm; font-size: 10pt; }
+.toc li { margin: 0 0 0.2em 0; break-inside: avoid; }
+.toc li.tp { font-weight: bold; margin-top: 0.6em; }
+.toc a { color: var(--ink); text-decoration: none; }
+
+/* Таблицы */
+table { border-collapse: collapse; margin: 0.6em 0 0.9em 0; font-size: 10pt; break-inside: avoid; page-break-inside: avoid; }
+caption { caption-side: top; text-align: left; font-weight: bold; padding: 0 0 0.25em 0; font-size: 10.5pt; }
+th, td { border: 0.6pt solid var(--rule); padding: 2.5pt 6pt; vertical-align: top; text-align: left; }
+thead th { background: var(--tint); font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-size: 9.5pt; }
+tbody th { font-weight: normal; font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-size: 9.5pt; background: #fafafa; white-space: nowrap; }
+table.wide { width: 100%; }
+table.par td { min-width: 28mm; }
+table.verb td { min-width: 22mm; }
+table.vocab { width: 100%; }
+table.vocab td:first-child { width: 34%; }
+table.vocab td:last-child { width: 30%; color: var(--soft); font-size: 9.5pt; }
+table.letters td, table.letters th { text-align: center; }
+
+/* Блоки */
+.rule, .note, .culture, .ex {
+  padding: 0.5em 0.8em; margin: 0.8em 0; break-inside: avoid; page-break-inside: avoid;
+}
+.rule { border-left: 3pt solid var(--ie); background: var(--tint); }
+.note { border-left: 3pt solid var(--rule); background: #fafafa; font-size: 10pt; }
+.culture { border: 0.6pt solid var(--rule); background: var(--tint2); font-size: 10pt; }
+.rule > :last-child, .note > :last-child, .culture > :last-child, .ex > :last-child { margin-bottom: 0; }
+.bt { font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-weight: bold; font-size: 9.5pt; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3em; display: block; }
+.ex { border-top: 1pt solid var(--ink); border-bottom: 1pt solid var(--ink); padding-left: 0; padding-right: 0; break-inside: auto; page-break-inside: auto; }
+.ex ol { margin: 0.2em 0 0.2em 1.4em; padding: 0; }
+.ex li { margin-bottom: 0.25em; }
+
+/* Тексты для чтения */
+.text { margin: 0.5em 0 0.8em 0; }
+.text p { text-align: left; margin-bottom: 0.35em; }
+.text p.ru { font-style: italic; color: var(--soft); margin-left: 1.2em; }
+.pair { width: 100%; }
+.pair td { width: 50%; font-size: 10.5pt; }
+.dialog p { text-align: left; margin-bottom: 0.25em; }
+ul.plain { list-style: none; padding-left: 0.6em; }
+ul, ol { margin-top: 0.2em; }
+
+/* Словарь */
+.dict { font-size: 9.5pt; }
+@media print { .dict { columns: 2; column-gap: 7mm; } }
+.dict p { text-align: left; margin: 0 0 0.18em 0; padding-left: 1em; text-indent: -1em; break-inside: avoid; }
+.dict p.dl { font-family: "Carlito", "Calibri", "Arimo", "Arial", sans-serif; font-weight: bold; font-size: 12pt; margin-top: 0.5em; text-indent: 0; padding-left: 0; break-after: avoid; }
+.dict .gr { font-style: italic; color: var(--soft); }
+.dict .par { color: var(--soft); font-size: 9pt; }
+
+.keys ol { columns: 1; }
+.keys p { text-align: left; }
+@media screen {
+  body { padding-top: 10mm; padding-bottom: 20mm; }
+  h1, h2 { margin-top: 18mm; }
+  h1 { padding-top: 10mm; }
+}
+
+a { color: var(--ie); }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 0.7pt solid var(--rule); margin: 1.2em 0; }
+blockquote { margin: 0.8em 0; padding: 0.45em 0.9em; border-left: 3pt solid var(--rule); background: #fafafa; color: var(--soft); }
+code { font-family: "Cascadia Mono", "Consolas", monospace; font-size: 0.92em; color: #27364a; background: #f4f5f7; padding: 0.04em 0.18em; border-radius: 2px; }
+.table-wrap { max-width: 100%; overflow-x: auto; }
+@media screen and (max-width: 620px) { body { max-width: 100%; padding-left: 4vw; padding-right: 4vw; font-size: 10.5pt; } .toc { columns: 1; } table { font-size: 9.5pt; } }
+</style>
+
+</head><body>
+<div class="title">
+<p class="t1">Современный индоевропейский язык</p>
+<p class="t2">Краткое руководство по транскрипции и грамматическим формам</p>
+<p class="t3"><span class="ie">MIE-sl</span></p>
+<p class="t4">Славянизированная кириллическая орфография<br>на основе «A Grammar of Modern Indo-European», 3-е издание</p>
+</div><div class="tocpage"><p class="t1 center"><b>Содержание</b></p><ul class="toc"><li class="tp"><a href="#sec-1-1-принципы-транскрипции">Принципы транскрипции</a></li><li><a href="#sec-2-1-1-гласные-и-долгота">1.1. Гласные и долгота</a></li><li><a href="#sec-3-1-2-слогообразующие-сонанты-праславянский-плеофонический-принцип">1.2. Слогообразующие сонанты (праславянский «плеофонический» принцип)</a></li><li><a href="#sec-4-1-3-взрывные-и-придыхательные">1.3. Взрывные и придыхательные</a></li><li><a href="#sec-5-1-4-лабиовелярные-бреве-и-палатализация">1.4. Лабиовелярные: бреве и палатализация</a></li><li><a href="#sec-6-1-5-палатализация-перед-j">1.5. Палатализация перед j</a></li><li><a href="#sec-7-1-6-остальные-согласные-и-полугласные">1.6. Остальные согласные и полугласные</a></li><li><a href="#sec-8-1-7-правила-сжатия-glide-compression">1.7. Правила сжатия (Glide Compression)</a></li><li><a href="#sec-9-1-8-система-ударений">1.8. Система ударений</a></li><li><a href="#sec-10-1-9-техническое-примечание-набор-знаков">1.9. Техническое примечание: набор знаков</a></li><li class="tp"><a href="#sec-11-2-имя-существительное-числа-и-восемь-падежей">Имя существительное: числа и восемь падежей</a></li><li><a href="#sec-12-вълк-ос-волк-мужской-род-o-основа-основа-вълк-о">вълк̆ос (волк) — мужской род, o-основа (основа: вълк̆о́- )</a></li><li><a href="#sec-13-ӂэна-женщина-женский-род-ā-основа-основа-ӂэна">ӂэна̄ (женщина) — женский род, ā-основа (основа: ӂэна̄- )</a></li><li><a href="#sec-14-юго-м-иго-ярмо-средний-род-o-основа-основа-юго">юго́м (иго, ярмо) — средний род, o-основа (основа: юго- )</a></li><li><a href="#sec-15-двойственное-число">Двойственное число</a></li><li class="tp"><a href="#sec-16-3-местоимения">Местоимения</a></li><li><a href="#sec-17-указательные-местоимения-они-же-местоимения-3-го-лица">Указательные местоимения (они же — местоимения 3-го лица)</a></li><li><a href="#sec-18-вопросительные-и-относительные-местоимения">Вопросительные и относительные местоимения</a></li><li class="tp"><a href="#sec-19-4-глаголы-времена-и-наклонения">Глаголы: времена и наклонения</a></li><li><a href="#sec-20-4-1-система-времён-краткий-обзор">4.1. Система времён (краткий обзор)</a></li><li><a href="#sec-21-4-2-архаичные-атематические-глаголы">4.2. Архаичные (атематические) глаголы</a></li><li><a href="#sec-22-4-3-характерный-тематический-глагол-б-эро-несу">4.3. Характерный тематический глагол: б̣эро̄ (несу)</a></li><li><a href="#sec-23-4-4-глагол-видеть-видэ-ё">4.4. Глагол «видеть» (видэ̄́ё̄)</a></li><li class="tp"><a href="#sec-24-5-прилагательные">Прилагательные</a></li><li><a href="#sec-25-нэвос-новый">нэвос (новый)</a></li><li class="tp"><a href="#sec-26-6-союзы-предлоги-и-частицы">Союзы, предлоги и частицы</a></li><li class="tp"><a href="#sec-27-7-словообразование-и-неологизмы">Словообразование и неологизмы</a></li><li><a href="#sec-28-7-1-деривация-от-условного-корня-glew--светить">7.1. Деривация от условного корня glew- (светить)</a></li><li><a href="#sec-29-7-2-глагол-глэво-свечу-сияю-инф-глэутум">7.2. Глагол: глэво̄ (свечу, сияю); инф. глэутум</a></li><li><a href="#sec-30-7-3-нулевая-ступень-аблаута-и-суффиксы">7.3. Нулевая ступень аблаута и суффиксы</a></li><li class="tp"><a href="#sec-31-8-примеры-текста">Примеры текста</a></li><li class="tp"><a href="#sec-32-9-расширенный-словарик">Расширенный словарик</a></li><li><a href="#sec-33-существительные">Существительные</a></li><li><a href="#sec-34-прилагательные">Прилагательные</a></li><li><a href="#sec-35-глаголы">Глаголы</a></li><li><a href="#sec-36-числительные">Числительные</a></li><li class="tp"><a href="#sec-37-10-практические-упражнения">Практические упражнения</a></li><li class="tp"><a href="#sec-38-11-обоснование-обратимости">Обоснование обратимости</a></li></ul></div>
+
+
+<p><strong>Зачем эта запись.</strong> MIE-sl — кириллическая орфография для русскоязычного пособия, а не попытка заставить русские правила чтения работать для MIE. Кириллица в разные эпохи и в разных странах служила письмом для языков с очень разной фонетикой; русское чтение здесь не предполагается. Знакомая графическая основа нужна прежде всего, чтобы читателю было легче увидеть устройство позднего индоевропейского: корни, окончания, чередования и связи с языками-наследниками.</p>
+<p>Основные фонологические различия MIE в этой записи сохранены; таблицы §1 и алгоритм §11 позволяют при желании восстановить точное чтение и исходную форму. Позиционные соответствия в §1.4–1.5 — приём кириллической передачи и узнавания, а не добавление к фонологии MIE славянских или романских звуковых изменений. §11 отдельно обозначает пределы обратимости для теоретически возможных, но не засвидетельствованных сочетаний. При чтении про себя допустимо произносить формы приблизительно или вовсе не озвучивать их, если это помогает следить за устройством материала; безошибочное чтение вслух не является условием работы с пособием. Сходство MIE-форм с русскими словами может служить мнемоникой, но само по себе не доказывает совпадения значения или этимологии.</p>
+<p><strong>Ударение в записи MIE-sl:</strong> ударение в MIE всегда одно, но акут — типографский знак, который ставится не всегда. По правилу Grammar 3rd ed. акут обычно опускается на пенультиме и в односложных словах, где ударение понятно из контекста; в словарной форме без знака ударение подразумевается и может быть записано явно, если это удобно. Наличие <span class="ie"><b>ё/ё̄</b></span> лишь немного меняет типографское правило: если ударение падает на <span class="ie"><b>ё/ё̄</b></span>, знак может быть опущен даже вне пенультимы (по русской типографской привычке); если же ударение падает на другую гласную, она помечается явным акутом — даже если это пенультима. Это не второе ударение и не yo-дизамбигуация.</p>
+
+<h2 id="sec-1-1-принципы-транскрипции"><span class="ln">Раздел 1</span>Принципы транскрипции</h2>
+<p>Для передачи основных различий MIE используются четыре диакритических знака. Их базовые функции показаны ниже; у акута есть также специальное орфографическое применение в кириллице (см. 1.8).</p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:center">Знак</th>
+<th style="text-align:left">Основная функция</th>
+<th style="text-align:left">Примеры</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">макрон ◌̄</td>
+<td style="text-align:left">долгота гласного</td>
+<td style="text-align:left">а̄, э̄, о̄, ё̄</td>
+</tr>
+<tr>
+<td style="text-align:center">подстрочная точка ◌̣</td>
+<td style="text-align:left">придыхание</td>
+<td style="text-align:left">б̣, д̣, г̣, ж̣</td>
+</tr>
+<tr>
+<td style="text-align:center">бреве (краткая) ◌̆</td>
+<td style="text-align:left">лабиовелярность</td>
+<td style="text-align:left">к̆, г̆, ч̆, ӂ</td>
+</tr>
+<tr>
+<td style="text-align:center">знак ударения ◌́</td>
+<td style="text-align:left">ударение (см. 1.8)</td>
+<td style="text-align:left">а́бэлос (<em class="lat">ábelos</em>), видэ̄́ё̄ (<em class="lat">widējō</em>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Латинские формы приводятся в орфографии MIE (<em class="lat">j</em> = [j], <em class="lat">q</em> = [kʷ], <em class="lat">c</em> = [ɡʷ], <em class="lat">ch</em> = [ɡʷʰ]), звучание — в квадратных скобках по IPA.</p>
+<h3 id="sec-2-1-1-гласные-и-долгота">1.1. Гласные и долгота</h3>
+<p>Долгота обозначается надстрочным макроном, как в латинской записи MIE. Макрон ставится над любой гласной, в том числе над йотированными <span class="ie"><b>я, е, ё, ю</b></span> (см. 1.7).</p>
+<p><strong>Ключевое различие между «э» и «е»:</strong></p>
+<ul>
+<li><span class="ie"><b>э</b></span> — твёрдый гласный [e], как в русском <em class="tr">это, поэт, мэр</em>. Используется для передачи MIE <em class="lat">e</em>.</li>
+<li><span class="ie"><b>е</b></span> — всегда сочетание полугласного <em class="lat">j</em> с гласным <em class="lat">e</em> (MIE <em class="lat">je</em>), в любой позиции: в начале слова, после гласной и после согласной.</li>
+</ul>
+<p>Это различие строго бижективно: если вы видите <span class="ie"><b>э</b></span>, это всегда твёрдое <em class="lat">e</em>; если вы видите <span class="ie"><b>е</b></span>, это всегда <em class="lat">je</em>.</p>
+<ul>
+<li><strong>a</strong> = а, <strong>ā</strong> = <span class="ie"><b>а̄</b></span></li>
+<li><strong>e</strong> = <span class="ie"><b>э</b></span> (твёрдое), <strong>ē</strong> = <span class="ie"><b>э̄</b></span></li>
+<li><strong>je</strong> = <span class="ie"><b>е</b></span> (йотированное), <strong>jē</strong> = <span class="ie"><b>е̄</b></span></li>
+<li><strong>i</strong> = и, <strong>ī</strong> = <strong>ӣ</strong></li>
+<li><strong>o</strong> = о, <strong>ō</strong> = <span class="ie"><b>о̄</b></span></li>
+<li><strong>u</strong> = у, <strong>ū</strong> = <strong>ӯ</strong></li>
+<li><strong>ə</strong> (редуцированный гласный, шва) = <span class="ie"><b>ә</b></span>: <em class="lat">ləkjō</em> → ләчо̄ «ловушка»</li>
+</ul>
+<p>Неслоговые <em class="lat">i, u</em> во втором элементе дифтонга пишутся <span class="ie"><b>й</b></span> и <span class="ie"><b>у</b></span>: <em class="lat">ei</em> = эй, <em class="lat">oi</em> = ой, <em class="lat">ai</em> = ай, <em class="lat">eu</em> = эу, <em class="lat">ou</em> = оу, <em class="lat">au</em> = ау (ойнос «один», тэута̄ «народ»). В долгих дифтонгах макрон стоит над первой гласной: <em class="lat">ōi</em> = о̄й, <em class="lat">āi</em> = а̄й (вълк̆о̄й «волку», ӂэна̄й «женщине»).</p>
+<h3 id="sec-3-1-2-слогообразующие-сонанты-праславянский-плеофонический-принцип">1.2. Слогообразующие сонанты (праславянский «плеофонический» принцип)</h3>
+<p>В MIE существуют слоговые <strong>ṛ, ḷ, ṃ, ṇ</strong>. В старославянском они закономерно развились в сочетания с редуцированным гласным (ъ/ь). Мы используем это как готовое, исторически обоснованное решение:</p>
+<ul>
+<li><strong>ṛ</strong> = <span class="ie"><b>ър</b></span> (кърди «сердце», ср. ст.-сл. <em class="tr">срьдьце</em>)</li>
+<li><strong>ḷ</strong> = <span class="ie"><b>ъл</b></span> (вълк̆ос «волк», ср. ст.-сл. <em class="tr">влькъ</em>)</li>
+<li><strong>ṃ</strong> = <span class="ie"><b>ъм</b></span> (дэкъм «десять», ср. ст.-сл. <em class="tr">десѧть</em>)</li>
+<li><strong>ṇ</strong> = <span class="ie"><b>ьн</b></span> (но̄мьн «имя», ср. ст.-сл. <em class="tr">имѧ</em>)</li>
+</ul>
+<p><strong>В начале слова</strong> вместо ъ/ь пишется протетический гласный <span class="ie"><b>ѥ</b></span> («е йотированное» старославянской азбуки):</p>
+<ul>
+<li><em class="lat">ṇsis</em> → ѥнсис «меч» (лат. <em class="lat">ensis</em>)</li>
+<li><em class="lat">ṛtkos</em> → ѥрткос «медведь»</li>
+<li><em class="lat">ṇsme</em> → ѥнсмэ «нас» (вин. п., см. раздел 3)</li>
+</ul>
+<p>Буквы <span class="ie"><b>ъ</b></span>, <span class="ie"><b>ь</b></span> и <span class="ie"><b>ѥ</b></span> употребляются <span class="ie"><b>только</b></span> в этих сочетаниях, поэтому их появление всегда означает слоговой сонант.</p>
+<h3 id="sec-4-1-3-взрывные-и-придыхательные">1.3. Взрывные и придыхательные</h3>
+<p>Придыхание обозначается <strong>подстрочной точкой</strong> под буквой соответствующего непридыхательного согласного.</p>
+<ul>
+<li><strong>p, t, k</strong> = п, т, к</li>
+<li><strong>b, d, g</strong> = б, д, г</li>
+<li><strong>bh, dh, gh</strong> = <span class="ie"><b>б̣, д̣, г̣</b></span> (б̣эро̄ (<em class="lat">bherō</em>) «несу», д̣угтэ̄р (<em class="lat">dhugtēr</em>) «дочь», г̣эусо̄ (<em class="lat">gheusō</em>) «слышу»)</li>
+<li><strong>th, kh</strong> = <span class="ie"><b>т̣, к̣</b></span> (редки; например, окончание перфекта -т̣а: войст̣а «ты знаешь»)</li>
+</ul>
+<p>Буква с точкой обозначает одну фонему: б̣, д̣, г̣ — звонкие придыхательные [bʰ], [dʰ], [ɡʰ]; т̣, к̣ — глухие придыхательные [tʰ], [kʰ]. Перед <em class="lat">j</em> и в лабиовелярных придыхательные подчиняются правилам 1.4–1.5 (ж̣, г̣̆, ӂ̣).</p>
+<p><span class="ie"><b>Заднеязычные</b></span> образуют два ряда: простые <strong>k, g, gh</strong> = <span class="ie"><b>к, г, г̣</b></span> и лабиовелярные <strong>q, c, ch</strong> (1.4). Простые заднеязычные пишутся одинаково перед любой гласной: къмтом «сто», дэкъм «десять», гно̄ско̄ «узнаю», гэну «колено», г̣эйма̄ «зима».</p>
+<h3 id="sec-5-1-4-лабиовелярные-бреве-и-палатализация">1.4. Лабиовелярные: бреве и палатализация</h3>
+<p>Лабиовелярные обозначаются <strong>надстрочной краткой (бреве)</strong> над буквой заднеязычного. Перед передними гласными они палатализуются, как в славянской первой палатализации (<em class="lat">qetwores</em> → <em class="tr">четыре</em>, <em class="lat">cenā</em> → <em class="tr">жена</em>) или в романских языках (ит. <em class="lat">cinque</em> [ˈtʃiŋkwe] из лат. <em class="lat">quīnque</em>).</p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Звук (IPA)</th>
+<th style="text-align:center">Запись MIE</th>
+<th style="text-align:center">Перед <em class="lat">e, ē, i, ī</em></th>
+<th style="text-align:center">В остальных позициях</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">[kʷ]</td>
+<td style="text-align:center">q</td>
+<td style="text-align:center"><span class="ie"><b>ч̆</b></span></td>
+<td style="text-align:center"><span class="ie"><b>к̆</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡʷ]</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center"><span class="ie"><b>ӂ</b></span></td>
+<td style="text-align:center"><span class="ie"><b>г̆</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡʷʰ]</td>
+<td style="text-align:center">ch</td>
+<td style="text-align:center"><span class="ie"><b>ӂ̣</b></span></td>
+<td style="text-align:center"><span class="ie"><b>г̣̆</b></span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>перед <em class="lat">e, ē, i, ī</em>: ч̆ис (<em class="lat">qis</em>) «кто», ч̆этворэс (<em class="lat">qetwores</em>) «четыре», ӂэна̄ (<em class="lat">cenā</em>) «женщина», ӂӣво́с (<em class="lat">cīwós</em>) «живой», ӂ̣эро̄ (<em class="lat">cherō</em>) «тёплый»</li>
+<li>перед <em class="lat">a, o, u</em>, перед согласными и в конце слова: к̆од «которое», ак̆а̄ «вода», нок̆тис «ночь», г̆ос «корова», снойг̣̆ос «снег» (ст.-сл. <em class="tr">снѣгъ</em>)</li>
+</ul>
+<p>Бреве сохраняется и после палатализации: <span class="ie"><b>ч̆, ӂ, ӂ̣</b></span> — всегда лабиовелярные, а <span class="ie"><b>ч, ж, ж̣</b></span> без бреве — простые заднеязычные перед <em class="lat">j</em> (1.5).</p>
+<p>Обе формы лабиовелярного могут встретиться в одном слове — ч̆эк̆лом «колесо» (<em class="lat">qéqlos</em>, ср. санскр. <em class="lat">cakrá</em>) — и чередоваться в склонении: вълк̆ос «волк», но зв. п. вълч̆э (ср. ст.-сл. <em class="tr">влькъ — вльче</em>); ч̆ис «кто», но к̆о́сё «кого» (ср. рус. <em class="tr">что</em> и <em class="tr">кто</em>: тот же <em class="lat">q</em> перед передним и задним гласным).</p>
+<p>В Grammar §2.1.3, примечание 1, различаются одиночные лабиовелярные фонемы <strong>q</strong> [kʷ], <strong>c</strong> [ɡʷ], <strong>ch</strong> [ɡʷʰ] и последовательности <strong>kw</strong> [k+w], <strong>gw</strong> [ɡ+w], <strong>ghw</strong> [ɡʰ+w]. В <em class="lat">ekwos</em> «конь» и <em class="lat">kwōn</em> «собака» буквы <em class="lat">k</em> и <em class="lat">w</em> — два согласных, поэтому <em class="lat">ekwos</em> передаётся <span class="ie"><b>эквос</b></span>, а <em class="lat">kwōn</em> — <span class="ie"><b>кво̄н</b></span>; это не одиночное <em class="lat">q</em>. Напротив, <em class="lat">aqā</em> «вода» содержит фонему <em class="lat">q</em> [kʷ] и передаётся <span class="ie"><b>ак̆а̄</b></span>.</p>
+<h3 id="sec-6-1-5-палатализация-перед-j">1.5. Палатализация перед j</h3>
+<p>Заднеязычные и лабиовелярные перед полугласным <em class="lat">j</em> дают шипящие, а сам <em class="lat">j</em> при этом <span class="ie"><b>поглощается</b></span>: следующая гласная пишется простой, нейотированной буквой (<span class="ie"><b>чо</b></span>, а не «чё»).</p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Сочетание (IPA)</th>
+<th style="text-align:center">Запись MIE</th>
+<th style="text-align:center">Кириллица</th>
+<th style="text-align:left">Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">[kj]</td>
+<td style="text-align:center">kj</td>
+<td style="text-align:center"><span class="ie"><b>ч</b></span></td>
+<td style="text-align:left">спэчо̄ «смотрю» (<em class="lat">spekjō</em>); ач̣ес «лезвие» (<em class="lat">akjēs</em>); ләчо̄ «ловушка» (<em class="lat">ləkjō</em>)</td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡj]</td>
+<td style="text-align:center">gj</td>
+<td style="text-align:center"><span class="ie"><b>ж</b></span></td>
+<td style="text-align:left">мәжос «большой» (<em class="lat">məgjos</em>)</td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡʰj]</td>
+<td style="text-align:center">ghj</td>
+<td style="text-align:center"><span class="ie"><b>ж̣</b></span></td>
+<td style="text-align:left">эж̣ос «ёж» (<em class="lat">eghjos</em>)</td>
+</tr>
+<tr>
+<td style="text-align:left">[kʷj]</td>
+<td style="text-align:center">qj</td>
+<td style="text-align:center"><span class="ie"><b>ч̆</b></span></td>
+<td style="text-align:left"><em class="lat">pr̥qjō</em> → <span class="ie"><b>пърч̆о̄</b></span> «чистить»; <em class="lat">soqjós</em> → <span class="ie"><b>соч̆о́с</b></span> «союзный»</td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡʷj]</td>
+<td style="text-align:center">cj</td>
+<td style="text-align:center"><span class="ie"><b>ӂ</b></span></td>
+<td style="text-align:left">схематически <em class="lat">cjo</em> → <span class="ie"><b>ӂо</b></span> (в проверенных источниках не засвидетельствовано)</td>
+</tr>
+<tr>
+<td style="text-align:left">[ɡʷʰj]</td>
+<td style="text-align:center">chj</td>
+<td style="text-align:center"><span class="ie"><b>ӂ̣</b></span></td>
+<td style="text-align:left">схематически <em class="lat">chjo</em> → <span class="ie"><b>ӂ̣о</b></span> (в проверенных источниках не засвидетельствовано)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Сочетание <em class="lat">qj</em> реально встречается в II.2, например <em class="lat">pr̥qjō</em> «чистить» и <em class="lat">soqjós</em> «союзный»; в тексте Grammar есть также <em class="lat">oqjō</em>. Сочетаний <em class="lat">cj</em> и <em class="lat">chj</em> в проверенных II.2 и Grammar не найдено — здесь приведены только схемы, это не доказательство невозможности таких последовательностей. Сочетаний <em class="lat">qj, cj, chj</em> перед <em class="lat">e, ē, i, ī</em> в этих источниках также не найдено.</p>
+<p><strong>Порядок правил:</strong></p>
+<ol>
+<li><em class="lat">k, g, gh, q, c, ch</em> + <em class="lat">j</em> → <span class="ie"><b>ч, ж, ж̣, ч̆, ӂ, ӂ̣</b></span> (<em class="lat">j</em> поглощается);</li>
+<li><em class="lat">q, c, ch</em> перед <em class="lat">e, ē, i, ī</em> → <span class="ie"><b>ч̆, ӂ, ӂ̣</b></span>, в остальных позициях → <span class="ie"><b>к̆, г̆, г̣̆</b></span>;</li>
+<li>остальные придыхательные: <em class="lat">bh, dh, gh, th, kh</em> → <span class="ie"><b>б̣, д̣, г̣, т̣, к̣</b></span>;</li>
+<li>оставшийся <em class="lat">j</em> сливается с гласной (1.7).</li>
+</ol>
+<p>Других случаев палатализации нет. Простые <em class="lat">k, g, gh</em> перед передними гласными <span class="ie"><b>не</b></span> меняются (г̣эусо̄ «слышу», гэну «колено», г̣эйма̄ «зима»), а сочетания других согласных с <em class="lat">j</em> (<em class="lat">tj, stj, dj, lj, nj, sj</em> …) пишутся как согласный + йотированная гласная: три́тёс «третий», г̣о́стёс «гостя», а́лёс «другой».</p>
+<h3 id="sec-7-1-6-остальные-согласные-и-полугласные">1.6. Остальные согласные и полугласные</h3>
+<ul>
+<li><strong>s</strong> = с</li>
+<li><strong>m, n, r, l</strong> = м, н, р, л</li>
+<li><strong>w</strong> (полугласный) = <span class="ie"><b>в</b></span> (исторически точно: <em class="lat">wḷqos</em> &gt; <em class="tr">vьlkъ</em> &gt; волк)</li>
+<li><strong>j</strong> (полугласный) = <span class="ie"><b>й</b></span> (исторически точно: <em class="lat">jugóm</em> &gt; <em class="lat">igo</em> &gt; иго)</li>
+</ul>
+<h3 id="sec-8-1-7-правила-сжатия-glide-compression">1.7. Правила сжатия (Glide Compression)</h3>
+<p>Эти правила применяются к результату базовой транслитерации и сжимают громоздкие сочетания в одну естественную кириллическую букву. <strong>Порядок важен:</strong> сначала <em class="lat">j</em> после заднеязычных и лабиовелярных поглощается (1.5), затем оставшееся <em class="tr">й</em> сливается с гласной.</p>
+<p><strong>Сжатие полугласного <code>й</code> (MIE <em class="lat">j</em>) с последующей гласной:</strong></p>
+<ul>
+<li><span class="ie"><b>йа</b></span> → <span class="ie"><b>я</b></span> (<em class="lat">ja</em>), долгое <em class="lat">jā</em> → <span class="ie"><b>я̄</b></span></li>
+<li><span class="ie"><b>йэ</b></span> → <span class="ie"><b>е</b></span> (<em class="lat">je</em>), долгое <em class="lat">jē</em> → <span class="ie"><b>е̄</b></span></li>
+<li><span class="ie"><b>йо</b></span> → <span class="ie"><b>ё</b></span> (<em class="lat">jo</em>), долгое <em class="lat">jō</em> → <span class="ie"><b>ё̄</b></span></li>
+<li><span class="ie"><b>йу</b></span> → <span class="ie"><b>ю</b></span> (<em class="lat">ju</em>), долгое <em class="lat">jū</em> → <span class="ie"><b>ю̄</b></span></li>
+</ul>
+<p>Правило действует и после согласной: <em class="lat">dje</em> → <span class="ie"><b>де</b></span>, <em class="lat">ljo</em> → <span class="ie"><b>лё</b></span>, <em class="lat">tjo</em> → <span class="ie"><b>тё</b></span> (Де̄ус «небо», а́лёс «другой», три́тёс «третий»). Это не «мягкий согласный» русского типа, а согласный + [j] + гласный, как в русском <em class="tr">платье, бульон</em>: палатализованных согласных вроде русских [tʲ], [lʲ] в MIE нет, и мягкий знак для них не используется. Исключение составляют заднеязычные и лабиовелярные: <em class="lat">k, g, gh, q, c, ch</em> перед <em class="lat">j</em> сливаются в <span class="ie"><b>ч, ж, ж̣, ч̆, ӂ, ӂ̣</b></span>, а сам <em class="lat">j</em> исчезает. Например, <em class="lat">spekjō</em> → <span class="ie"><b>спэчо̄</b></span>, не «спэчё̄»: после слияния <em class="lat">kj</em> пишется простая <span class="ie"><b>о̄</b></span>, не <span class="ie"><b>ё̄</b></span>.</p>
+<p><em class="tr">(Сочетания <strong>ой, ай, уй, эй</strong> не сжимаются, так как в них гласная предшествует <em class="tr">й</em>, а не наоборот.)</em></p>
+<h3 id="sec-9-1-8-система-ударений">1.8. Система ударений</h3>
+<p>Ударение в MIE всегда одно. Знак ударения в MIE-sl — типографский знак, который ставится не всегда. По правилу Grammar 3rd ed. акут обычно опускается на пенультиме и в односложных словах, где ударение понятно из контекста; в словарной форме без знака ударение подразумевается и может быть записано явно, если это удобно.</p>
+<p>Наличие ё/ё̄ лишь немного меняет это типографское правило. Если ударение падает на ё/ё̄, знак может быть опущен даже вне пенультимы (срабатывает русская типографская привычка). Если же ударение падает на другую гласную, она помечается явным акутом — даже если это пенультима. Это не второе ударение и не yo-дизамбигуация.</p>
+<p>При подсчёте слогов учитываются шва и слоговые сонанты; дифтонг образует одно слоговое ядро. Если ударение не на пенультиме и не падает на ё, знак ставится над соответствующей гласной; у долгой гласной — над макроном, у дифтонга — над первым элементом; для слогового сонанта — над ъ/ь, а в начале слова — над протетическим ѥ. Примеры: пэ̄тэ̄р (<em class="lat">pətēr</em>, ударение на пенультиме, без знака), а́бэлос (<em class="lat">ábelos</em>, ударение не на пенультиме), видэ̄́ё̄ (<em class="lat">widējō</em>, ударение на пенультиме, но не на ё, поэтому явный акут стоит на э̄́).</p>
+<p>В отдельно приводимых ударных суффиксах и окончаниях знак может сохраняться как обозначение морфемного ударения, даже если такая морфема дана изолированно: -мэ́, -ти́с.</p>
+<h3 id="sec-10-1-9-техническое-примечание-набор-знаков">1.9. Техническое примечание: набор знаков</h3>
+<p>Все диакритики — комбинируемые символы Unicode, которые набираются после базовой буквы:</p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Знак</th>
+<th style="text-align:left">Код</th>
+<th style="text-align:left">Функция</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">◌̄ макрон</td>
+<td style="text-align:left">U+0304</td>
+<td style="text-align:left">долгота: а̄ э̄ ӣ о̄ ӯ я̄ е̄ ё̄ ю̄</td>
+</tr>
+<tr>
+<td style="text-align:left">◌̆ бреве</td>
+<td style="text-align:left">U+0306</td>
+<td style="text-align:left">лабиовелярность: к̆ г̆ г̣̆ ч̆ ӂ ӂ̣</td>
+</tr>
+<tr>
+<td style="text-align:left">◌̣ точка снизу</td>
+<td style="text-align:left">U+0323</td>
+<td style="text-align:left">придыхание: б̣ д̣ г̣ т̣ к̣ ж̣ г̣̆ ӂ̣</td>
+</tr>
+<tr>
+<td style="text-align:left">◌́ ударение</td>
+<td style="text-align:left">U+0301</td>
+<td style="text-align:left">ударение: а́, э̄́</td>
+</tr>
+<tr>
+<td style="text-align:left">ѥ (прописная Ѥ)</td>
+<td style="text-align:left">U+0465 (U+0464)</td>
+<td style="text-align:left">протетический гласный перед начальным слоговым сонантом</td>
+</tr>
+<tr>
+<td style="text-align:left">ә (прописная Ә)</td>
+<td style="text-align:left">U+04D9 (U+04D8)</td>
+<td style="text-align:left">шва <em class="lat">ə</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Порядок знаков: буква → макрон или бреве → точка снизу → ударение (например, г̣̆ = г + U+0306 + U+0323; э̄́ = э + U+0304 + U+0301). Буквы ӯ, ӣ, ӂ есть в Unicode и в готовом виде (U+04EF, U+04E3, U+04C2) и канонически им эквивалентны; при нормализации NFC порядок точки и бреве может переставиться, но на вид это не влияет. Буква ӂ знакома по молдавской кириллице, где она обозначала [dʒ].</p>
+<hr/>
+<h2 id="sec-11-2-имя-существительное-числа-и-восемь-падежей"><span class="ln">Раздел 2</span>Имя существительное: числа и восемь падежей</h2>
+<p><em class="tr">Порядок падежей адаптирован под русскую грамматическую традицию: И.п., Р.п., Д.п., В.п., Тв.п. (Инструменталис), М.п. (Локатив, соответствует предложному), Отл.п. (Аблатив), Зв.п. Основа выделена обычным шрифтом, флексия (окончание) — <span class="ie"><b>жирным</b></span>.</em></p>
+<h3 id="sec-12-вълк-ос-волк-мужской-род-o-основа-основа-вълк-о">вълк̆ос (волк) — мужской род, o-основа (основа: <em class="tr">вълк̆о́-</em>)</h3>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Падеж (рус. эквивалент)</th>
+<th style="text-align:left">Единственное</th>
+<th style="text-align:left">Множественное</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Именительный</b></span> <em class="tr">(кто? что?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>ос</b></span> <em class="tr">(волк)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄с</b></span> <em class="tr">(волки)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Родительный</b></span> <em class="tr">(кого? чего?)</em></td>
+<td style="text-align:left">въ́лк̆<span class="ie"><b>осё</b></span> <em class="tr">(волка)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄м</b></span> <em class="tr">(волков)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Дательный</b></span> <em class="tr">(кому? чему?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄й</b></span> <em class="tr">(волку)</em></td>
+<td style="text-align:left">въ́лк̆<span class="ie"><b>об̣ос</b></span> <em class="tr">(волкам)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Винительный</b></span> <em class="tr">(кого? что?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>ом</b></span> <em class="tr">(волка)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>онс</b></span> <em class="tr">(волков)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Творительный</b></span> <em class="tr">(кем? чем?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄</b></span> <em class="tr">(волком)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄йс</b></span> <em class="tr">(волками)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Местный</b></span> <em class="tr">(где? в ком?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>ой</b></span> <em class="tr">(в волке; ст.-сл. влъцѣ)</em></td>
+<td style="text-align:left">въ́лк̆<span class="ie"><b>ойсу</b></span> <em class="tr">(в волках; ст.-сл. влъцѣхъ)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Отложительный</b></span> <em class="tr">(от кого?)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄д</b></span> <em class="tr">(от волка)</em></td>
+<td style="text-align:left">въ́лк̆<span class="ie"><b>об̣ос</b></span> <em class="tr">(от волков)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Звательный</b></span> <em class="tr">(обращение)</em></td>
+<td style="text-align:left">вълч̆<span class="ie"><b>э</b></span> <em class="tr">(о волк!; ст.-сл. вльче)</em></td>
+<td style="text-align:left">вълк̆<span class="ie"><b>о̄с</b></span> <em class="tr">(о волки!)</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="tr">Перед окончанием звательного падежа -э лабиовелярный палатализуется (см. 1.4): вълк̆ос — вълч̆э, как ст.-сл. влькъ — вльче.</em></p>
+<h3 id="sec-13-ӂэна-женщина-женский-род-ā-основа-основа-ӂэна">ӂэна̄ (женщина) — женский род, ā-основа (основа: <em class="tr">ӂэна̄-</em>)</h3>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Падеж (рус. эквивалент)</th>
+<th style="text-align:left">Единственное</th>
+<th style="text-align:left">Множественное</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Именительный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄</b></span> <em class="tr">(женщина)</em></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄с</b></span> <em class="tr">(женщины)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Родительный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄с</b></span> <em class="tr">(женщины)</em></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄м</b></span> <em class="tr">(женщин)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Дательный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄й</b></span> <em class="tr">(женщине)</em></td>
+<td style="text-align:left">ӂэ́н<span class="ie"><b>а̄б̣ос</b></span> <em class="tr">(женщинам)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Винительный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄м</b></span> <em class="tr">(женщину)</em></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄нс</b></span> <em class="tr">(женщин)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Творительный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄</b></span> <em class="tr">(женщиной)</em></td>
+<td style="text-align:left">ӂэ́н<span class="ie"><b>а̄б̣ис</b></span> <em class="tr">(женщинами)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Местный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄й</b></span> <em class="tr">(в женщине; ст.-сл. женѣ)</em></td>
+<td style="text-align:left">ӂэ́н<span class="ie"><b>а̄су</b></span> <em class="tr">(в женщинах; ст.-сл. женахъ)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Отложительный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄д</b></span> <em class="tr">(от женщины)</em></td>
+<td style="text-align:left">ӂэ́н<span class="ie"><b>а̄б̣ос</b></span> <em class="tr">(от женщин)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Звательный</b></span></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а</b></span> <em class="tr">(о женщина!)</em></td>
+<td style="text-align:left">ӂэн<span class="ie"><b>а̄с</b></span> <em class="tr">(о женщины!)</em></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="sec-14-юго-м-иго-ярмо-средний-род-o-основа-основа-юго">юго́м (иго, ярмо) — средний род, o-основа (основа: <em class="tr">юго-</em>)</h3>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Падеж</th>
+<th style="text-align:left">Единственное</th>
+<th style="text-align:left">Множественное</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Именительный, винительный, звательный</strong></td>
+<td style="text-align:left">юг<span class="ie"><b>о́м</b></span> <em class="tr">(иго)</em></td>
+<td style="text-align:left">юг<span class="ie"><b>а́</b></span> <em class="tr">(ига)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Остальные падежи</strong></td>
+<td style="text-align:left">как у вълк̆ос: юг<span class="ie"><b>о́сё</b></span>, юг<span class="ie"><b>о̄́й</b></span>, юг<span class="ie"><b>о̄́</b></span>...</td>
+<td style="text-align:left">как у вълк̆ос: юг<span class="ie"><b>о̄́м</b></span>, юг<span class="ie"><b>об̣ос</b></span>...</td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="tr">Средний род отличается от мужского только в именительном, винительном и звательном падежах.</em></p>
+<h3 id="sec-15-двойственное-число">Двойственное число</h3>
+<p>Двойственное число (для пар) имеет особую форму только в именительном, винительном и звательном падежах: дво̄у вълк̆о̄ <em class="tr">(два волка; ст.-сл. дъва влька)</em>, двай ӂэнай <em class="tr">(две женщины; ст.-сл. дъвѣ женѣ)</em>, двой юго́й <em class="tr">(два ярма)</em>. В остальных падежах употребляются формы множественного числа. Двойственное число в MIE факультативно.</p>
+<hr/>
+<h2 id="sec-16-3-местоимения"><span class="ln">Раздел 3</span>Местоимения</h2>
+<p><em class="tr">Через запятую даны ударная и безударная (энклитическая) формы.</em></p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Падеж</th>
+<th style="text-align:left">я</th>
+<th style="text-align:left">ты</th>
+<th style="text-align:left">мы</th>
+<th style="text-align:left">вы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Им.</b></span></td>
+<td style="text-align:left">эго̄</td>
+<td style="text-align:left">тӯ</td>
+<td style="text-align:left">вэес</td>
+<td style="text-align:left">ювэс</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Род.</b></span></td>
+<td style="text-align:left">мэнэ <em class="tr">(мене)</em></td>
+<td style="text-align:left">тэвэ <em class="tr">(тебе)</em></td>
+<td style="text-align:left">ѥнсэро́м, нос <em class="tr">(нас)</em></td>
+<td style="text-align:left">вэсро́м, вос <em class="tr">(вас)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Дат.</b></span></td>
+<td style="text-align:left">мэг̣эй, мой <em class="tr">(мне, ми)</em></td>
+<td style="text-align:left">тэб̣эй, той <em class="tr">(тебе, ти)</em></td>
+<td style="text-align:left">ѥнсмэ́й, нос</td>
+<td style="text-align:left">юсмэ́й, вос</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Вин.</b></span></td>
+<td style="text-align:left">мэво́м, мэ <em class="tr">(мя)</em></td>
+<td style="text-align:left">тэво́м, тэ <em class="tr">(тя)</em></td>
+<td style="text-align:left">ѥнсмэ, нос</td>
+<td style="text-align:left">юсмэ́, вос</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Тв.</b></span></td>
+<td style="text-align:left">мо́ё</td>
+<td style="text-align:left">то́ё</td>
+<td style="text-align:left">носб̣ис</td>
+<td style="text-align:left">восб̣ис</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Мест.</b></span></td>
+<td style="text-align:left">мэй</td>
+<td style="text-align:left">тэй</td>
+<td style="text-align:left">ѥнсми́</td>
+<td style="text-align:left">юсми́</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Отл.</b></span></td>
+<td style="text-align:left">мэд</td>
+<td style="text-align:left">тэд</td>
+<td style="text-align:left">ѥнсмэ́д</td>
+<td style="text-align:left">юсмэ́д</td>
+</tr>
+</tbody>
+</table></div>
+<p>Двойственное: вэ̄ <em class="tr">(мы двое)</em>, вин. но̄; ю̄ <em class="tr">(вы двое)</em>, вин. во̄ (ср. ст.-сл. <em class="tr">вѣ, на, ва</em>).</p>
+<p>Возвратное: вин. сэ <em class="tr">(себя, ст.-сл. сѧ)</em>, род. сэвэ, дат. сэб̣эй, сой <em class="tr">(себе, си)</em>, отл. свэд.</p>
+<h3 id="sec-17-указательные-местоимения-они-же-местоимения-3-го-лица">Указательные местоимения (они же — местоимения 3-го лица)</h3>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Падеж</th>
+<th style="text-align:left"><span class="ie"><b>со</b></span> (тот, он)</th>
+<th style="text-align:left"><span class="ie"><b>тод</b></span> (то, оно)</th>
+<th style="text-align:left"><span class="ie"><b>са̄</b></span> (та, она)</th>
+<th style="text-align:left">мн. м. р.</th>
+<th style="text-align:left">мн. ж. р.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Им.</b></span></td>
+<td style="text-align:left">со</td>
+<td style="text-align:left">тод</td>
+<td style="text-align:left">са̄</td>
+<td style="text-align:left">той <em class="tr">(ти, те)</em></td>
+<td style="text-align:left">та̄й</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Род.</b></span></td>
+<td style="text-align:left">то́сё</td>
+<td style="text-align:left">то́сё</td>
+<td style="text-align:left">тэся̄с</td>
+<td style="text-align:left">тойсом</td>
+<td style="text-align:left">та̄сом</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Дат.</b></span></td>
+<td style="text-align:left">тосмо̄й <em class="tr">(тому)</em></td>
+<td style="text-align:left">тосмо̄й</td>
+<td style="text-align:left">тэся̄й</td>
+<td style="text-align:left">тойб̣ос</td>
+<td style="text-align:left">та̄б̣ос</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Вин.</b></span></td>
+<td style="text-align:left">том</td>
+<td style="text-align:left">тод</td>
+<td style="text-align:left">та̄м</td>
+<td style="text-align:left">тонс</td>
+<td style="text-align:left">та̄нс</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Тв.</b></span></td>
+<td style="text-align:left">той</td>
+<td style="text-align:left">той</td>
+<td style="text-align:left">тэся̄</td>
+<td style="text-align:left">то̄йс</td>
+<td style="text-align:left">та̄б̣ис</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Мест.</b></span></td>
+<td style="text-align:left">тосми <em class="tr">(томь)</em></td>
+<td style="text-align:left">тосми</td>
+<td style="text-align:left">тэся̄й</td>
+<td style="text-align:left">тойсу <em class="tr">(тѣхъ)</em></td>
+<td style="text-align:left">та̄су</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Отл.</b></span></td>
+<td style="text-align:left">тосмо̄д</td>
+<td style="text-align:left">тосмо̄д</td>
+<td style="text-align:left">тэся̄с</td>
+<td style="text-align:left">тойб̣ос</td>
+<td style="text-align:left">та̄б̣ос</td>
+</tr>
+</tbody>
+</table></div>
+<p>Средний род мн. ч.: им./вин. та̄.</p>
+<h3 id="sec-18-вопросительные-и-относительные-местоимения">Вопросительные и относительные местоимения</h3>
+<p><span class="ie"><b>ч̆ис</b></span> (кто?) и <span class="ie"><b>ч̆ид</b></span> (что?) — лат. <em class="lat">quis, quid</em> <em class="lat">(qis, qid)</em>. Косвенные падежи — от основы к̆о-: к̆о́сё <em class="tr">(кого, чего)</em>, к̆осмо̄й <em class="tr">(кому, чему)</em>, к̆осми <em class="tr">(ком, чём)</em>. Чередование ч̆ис / к̆о́сё — по правилу 1.4 (ср. рус. <em class="tr">что</em> и <em class="tr">кто</em>).
+<span class="ie"><b>к̆ос, к̆а̄, к̆од</b></span> — который? какой? (лат. <em class="lat">qui, quae, quod</em>).
+<span class="ie"><b>ёс, я̄, ёд</b></span> — который (относительное; ст.-сл. <em class="tr">иже, ꙗже, еже</em>).</p>
+<hr/>
+<h2 id="sec-19-4-глаголы-времена-и-наклонения"><span class="ln">Раздел 4</span>Глаголы: времена и наклонения</h2>
+<p><em class="tr">Основа выделена обычным шрифтом, флексия — <span class="ie"><b>жирным</b></span>. Словарная форма глагола — 1-е лицо ед. ч. настоящего времени; инфинитив образуется на -тум: б̣эртум «нести».</em></p>
+<h3 id="sec-20-4-1-система-времён-краткий-обзор">4.1. Система времён (краткий обзор)</h3>
+<ol>
+<li><strong>Настоящее (Present):</strong> действие в настоящем, регулярные или незавершённые действия. Первичные окончания.</li>
+<li><strong>Имперфект (Imperfect):</strong> прошедшее несовершенное. Образуется от основы настоящего времени вторичными окончаниями; перед ним может стоять аугмент э-.</li>
+<li><strong>Аорист (Aorist):</strong> однократное, завершённое действие в прошлом (корневой, тематический или сигматический).</li>
+<li><strong>Перфект (Perfect):</strong> состояние как результат действия; особые окончания -а, -т̣а, -э, -мэ, -э, -э̄р.</li>
+<li><strong>Будущее (Future):</strong> суффикс -сй- + тематический гласный.</li>
+</ol>
+<p>Наклонения: изъявительное, сослагательное (удли́нённый тематический гласный), желательное (суффикс -ой- / -е̄-), повелительное. Залоги: действительный и медиальный (окончания на -р: б̣э́рэтор «несётся»).</p>
+<h3 id="sec-21-4-2-архаичные-атематические-глаголы">4.2. Архаичные (атематические) глаголы</h3>
+<h4><span class="ie"><b>эсми</b></span> (быть)</h4>
+<p><em class="tr">Корень: es-; во мн. ч. нулевая ступень s-</em></p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Время / Наклонение</th>
+<th style="text-align:left">Единственное число</th>
+<th style="text-align:left">Множественное число</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Настоящее</b></span></td>
+<td style="text-align:left">1. эс<span class="ie"><b>ми</b></span> <em class="tr">(есмь)</em><br/>2. э<span class="ie"><b>си</b></span> <em class="tr">(еси)</em><br/>3. эс<span class="ie"><b>ти</b></span> <em class="tr">(есть)</em></td>
+<td style="text-align:left">1. с<span class="ie"><b>мэс</b></span> <em class="tr">(есмъ)</em><br/>2. с<span class="ie"><b>тэ</b></span> <em class="tr">(есте)</em><br/>3. с<span class="ie"><b>энти</b></span> <em class="tr">(сѫть, суть)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Имперфект</b></span> <em class="lat">(ē-es-)</em></td>
+<td style="text-align:left">1. э̄с<span class="ie"><b>ъм</b></span> <em class="tr">(я был)</em><br/>2. э̄<span class="ie"><b>с</b></span> <em class="tr">(ты был)</em><br/>3. э̄с<span class="ie"><b>т</b></span> <em class="tr">(он был)</em></td>
+<td style="text-align:left">1. э̄с<span class="ie"><b>мэ</b></span> <em class="tr">(мы были)</em><br/>2. э̄с<span class="ie"><b>тэ</b></span> <em class="tr">(вы были)</em><br/>3. э̄с<span class="ie"><b>ьнт</b></span> <em class="tr">(они были)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Аорист</b></span> <em class="lat">(bhū-)</em></td>
+<td style="text-align:left">1. эб̣ӯ<span class="ie"><b>м</b></span> <em class="tr">(я стал)</em><br/>2. эб̣ӯ<span class="ie"><b>с</b></span> <em class="tr">(ты стал)</em><br/>3. эб̣ӯ<span class="ie"><b>т</b></span> <em class="tr">(он стал; ст.-сл. бы)</em></td>
+<td style="text-align:left">1. э́б̣ӯ<span class="ie"><b>мэ</b></span> <em class="tr">(мы стали)</em><br/>2. э́б̣ӯ<span class="ie"><b>тэ</b></span> <em class="tr">(вы стали)</em><br/>3. э́б̣ув<span class="ie"><b>ьнт</b></span> <em class="tr">(они стали)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Будущее</b></span> <em class="lat">(es-je/o-)</em></td>
+<td style="text-align:left">1. э́с<span class="ie"><b>ё̄</b></span> <em class="tr">(я буду)</em><br/>2. э́с<span class="ie"><b>еси</b></span> <em class="tr">(ты будешь)</em><br/>3. э́с<span class="ie"><b>ети</b></span> <em class="tr">(он будет)</em></td>
+<td style="text-align:left">1. э́с<span class="ie"><b>ёмос</b></span> <em class="tr">(мы будем)</em><br/>2. э́с<span class="ie"><b>етэ</b></span> <em class="tr">(вы будете)</em><br/>3. э́с<span class="ie"><b>ёнти</b></span> <em class="tr">(они будут)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Желательное</b></span> <em class="lat">(s-jē-/s-ī-)</em></td>
+<td style="text-align:left">1. с<span class="ie"><b>е̄м</b></span> <em class="tr">(был бы я; лат. siem)</em><br/>2. с<span class="ie"><b>е̄с</b></span><br/>3. с<span class="ie"><b>е̄т</b></span></td>
+<td style="text-align:left">1. с<span class="ie"><b>ӣмэ</b></span> <em class="tr">(лат. sīmus)</em><br/>2. с<span class="ie"><b>ӣтэ</b></span><br/>3. с<span class="ie"><b>ӣнт</b></span> <em class="tr">(лат. sint)</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="tr">(Здесь работает правило сжатия: <em class="lat">es-jō</em> → эсйо̄ → э́сё̄; <em class="lat">es-je-si</em> → эсйэси → э́сеси.)</em> Повелительное: сд̣и «будь!», эсто̄д «да будет» (лат. <em class="lat">estō</em>).</p>
+<h4><span class="ie"><b>войда</b></span> (знаю, ведаю)</h4>
+<p><em class="tr">Корень: weid-. Формально это древний перфект «я увидел», ставший настоящим временем «я знаю» (ст.-сл. вѣдѣ, греч. oida).</em></p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Единственное число</th>
+<th style="text-align:left">Множественное число</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1. войд<span class="ie"><b>а</b></span> <em class="tr">(ведаю)</em><br/>2. войс<span class="ie"><b>т̣а</b></span> <em class="tr">(ведаешь)</em><br/>3. войд<span class="ie"><b>э</b></span> <em class="tr">(ведает)</em></td>
+<td style="text-align:left">1. вид<span class="ie"><b>мэ́</b></span> <em class="tr">(ведаем)</em><br/>2. вид<span class="ie"><b>э́</b></span> <em class="tr">(ведаете)</em><br/>3. вид<span class="ie"><b>э̄́р</b></span> <em class="tr">(ведают)</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Видеть — тематический глагол состояния видэ̄́ё̄ <em class="tr">(вижу; ст.-сл. видѣти, лат. video)</em>; аорист э́видом <em class="tr">(я увидел)</em>.</p>
+<h4><span class="ie"><b>эдми</b></span> (есть, кушать)</h4>
+<p><em class="tr">Корень: ed-; ст.-сл. ѩмь, лат. edo.</em></p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Время</th>
+<th style="text-align:left">Единственное число</th>
+<th style="text-align:left">Множественное число</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Настоящее</b></span></td>
+<td style="text-align:left">1. эд<span class="ie"><b>ми</b></span> <em class="tr">(ямь / ем)</em><br/>2. эд<span class="ie"><b>си</b></span> <em class="tr">(ешь)</em><br/>3. эс<span class="ie"><b>ти</b></span> <em class="tr">(ест; dt &gt; st)</em></td>
+<td style="text-align:left">1. д<span class="ie"><b>мэс</b></span> <em class="tr">(едим)</em><br/>2. д<span class="ie"><b>тэ</b></span> <em class="tr">(едите)</em><br/>3. д<span class="ie"><b>энти</b></span> <em class="tr">(едят)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Имперфект</b></span></td>
+<td style="text-align:left">1. э̄д<span class="ie"><b>ъм</b></span> <em class="tr">(я ел)</em><br/>2. э̄д<span class="ie"><b>с</b></span><br/>3. э̄с<span class="ie"><b>т</b></span></td>
+<td style="text-align:left">1. э̄д<span class="ie"><b>мэ</b></span><br/>2. э̄с<span class="ie"><b>тэ</b></span><br/>3. э̄д<span class="ie"><b>ьнт</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Будущее</b></span></td>
+<td style="text-align:left">1. э́д<span class="ie"><b>сё̄</b></span> <em class="tr">(буду есть)</em><br/>2. э́д<span class="ie"><b>сеси</b></span><br/>3. э́д<span class="ie"><b>сети</b></span></td>
+<td style="text-align:left">1. э́д<span class="ie"><b>сёмос</b></span><br/>2. э́д<span class="ie"><b>сетэ</b></span><br/>3. э́д<span class="ie"><b>сёнти</b></span></td>
+</tr>
+</tbody>
+</table></div>
+<h4>Другие атематические глаголы</h4>
+<p>эйми <em class="tr">(иду; мн. имэ́с, итэ́, енти)</em>, ди́до̄ми <em class="tr">(даю; мн. дидамэ́с, дидатэ́, ди́дьнти)</em>, д̣и́д̣э̄ми <em class="tr">(кладу, делаю)</em>, си́ста̄ми <em class="tr">(ставлю)</em>, вэлми <em class="tr">(хочу; ст.-сл. велѣти, лат. volo)</em>.</p>
+<p><em class="tr">Примечание.</em> Глагол «иметь, брать» (корень <em class="lat">em-</em>, источник праслав. <em class="tr">имѣти, ѩти</em>) в MIE тематический: эмо̄ <em class="tr">(беру; лат. emo)</em>. Для «иметь, держать» употребляется г̣аб̣э̄́ё̄ <em class="tr">(лат. habeo)</em>.</p>
+<hr/>
+<h3 id="sec-22-4-3-характерный-тематический-глагол-б-эро-несу">4.3. Характерный тематический глагол: <span class="ie"><b>б̣эро̄</b></span> (несу)</h3>
+<p><em class="tr">Корень: bher-. Тематическая гласная <strong>-e/o-</strong> вставляется между корнем и окончанием. Инфинитив б̣эртум.</em></p>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Время / Наклонение</th>
+<th style="text-align:left">Единственное число</th>
+<th style="text-align:left">Множественное число</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Настоящее</b></span></td>
+<td style="text-align:left">1. б̣эр<span class="ie"><b>о̄</b></span> <em class="tr">(несу)</em><br/>2. б̣э́р<span class="ie"><b>эси</b></span> <em class="tr">(не́сёшь)</em><br/>3. б̣э́р<span class="ie"><b>эти</b></span> <em class="tr">(несёт)</em></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>омос</b></span> <em class="tr">(несём)</em><br/>2. б̣э́р<span class="ie"><b>этэ</b></span> <em class="tr">(несёте)</em><br/>3. б̣э́р<span class="ie"><b>онти</b></span> <em class="tr">(несут)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Имперфект</b></span></td>
+<td style="text-align:left">1. э́б̣эр<span class="ie"><b>ом</b></span> <em class="tr">(я нёс)</em><br/>2. э́б̣эр<span class="ie"><b>эс</b></span> <em class="tr">(ты нёс)</em><br/>3. э́б̣эр<span class="ie"><b>эт</b></span> <em class="tr">(он нёс)</em></td>
+<td style="text-align:left">1. э́б̣эр<span class="ie"><b>омо</b></span> <em class="tr">(мы несли)</em><br/>2. э́б̣эр<span class="ie"><b>этэ</b></span> <em class="tr">(вы несли)</em><br/>3. э́б̣эр<span class="ie"><b>онт</b></span> <em class="tr">(они несли)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Будущее</b></span></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>сё̄</b></span> <em class="tr">(понесу)</em><br/>2. б̣э́р<span class="ie"><b>сеси</b></span> <em class="tr">(поне́сёшь)</em><br/>3. б̣э́р<span class="ie"><b>сети</b></span> <em class="tr">(понесёт)</em></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>сёмос</b></span> <em class="tr">(понесём)</em><br/>2. б̣э́р<span class="ie"><b>сетэ</b></span> <em class="tr">(понесёте)</em><br/>3. б̣э́р<span class="ie"><b>сёнти</b></span> <em class="tr">(понесут)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Сослагательное</b></span></td>
+<td style="text-align:left">1. б̣эр<span class="ie"><b>о̄</b></span><br/>2. б̣э́р<span class="ie"><b>э̄си</b></span><br/>3. б̣э́р<span class="ie"><b>э̄ти</b></span> <em class="tr">(пусть несёт)</em></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>о̄мос</b></span><br/>2. б̣э́р<span class="ie"><b>э̄тэ</b></span><br/>3. б̣э́р<span class="ie"><b>о̄нти</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Желательное</b></span></td>
+<td style="text-align:left">1. б̣эр<span class="ie"><b>ойм</b></span> <em class="tr">(нёс бы)</em><br/>2. б̣эр<span class="ie"><b>ойс</b></span><br/>3. б̣эр<span class="ie"><b>ойт</b></span></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>оймэ</b></span><br/>2. б̣э́р<span class="ie"><b>ойтэ</b></span> <em class="tr">(ст.-сл. берѣте)</em><br/>3. б̣эр<span class="ie"><b>ойнт</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Повелительное</b></span></td>
+<td style="text-align:left">2. б̣эр<span class="ie"><b>э</b></span> <em class="tr">(неси!)</em><br/>3. б̣э́р<span class="ie"><b>это̄д</b></span> <em class="tr">(пусть несёт)</em></td>
+<td style="text-align:left">2. б̣э́р<span class="ie"><b>этэ</b></span> <em class="tr">(несите!)</em><br/>3. б̣э́р<span class="ie"><b>онто̄д</b></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Медиальное</b></span></td>
+<td style="text-align:left">1. б̣эр<span class="ie"><b>ар</b></span><br/>2. б̣э́р<span class="ie"><b>эсор</b></span><br/>3. б̣э́р<span class="ie"><b>этор</b></span> <em class="tr">(несётся; лат. fertur)</em></td>
+<td style="text-align:left">1. б̣э́р<span class="ie"><b>омэсд̣а</b></span><br/>2. б̣э́р<span class="ie"><b>эд̣вэ</b></span><br/>3. б̣э́р<span class="ie"><b>онтор</b></span></td>
+</tr>
+</tbody>
+</table></div>
+<p>Аорист у б̣эр- не употребителен; сигматический аорист показывает, например, вэг̣о̄ <em class="tr">(везу)</em>: э́вэ̄г̣<span class="ie"><b>съм</b></span> <em class="tr">(я повёз; ст.-сл. вѣсъ, лат. vexī)</em>, эвэ̄г̣<span class="ie"><b>ст</b></span> <em class="tr">(он повёз)</em>.</p>
+<h3 id="sec-23-4-4-глагол-видеть-видэ-ё">4.4. Глагол «видеть» (видэ̄́ё̄)</h3>
+<p><strong>Настоящее время</strong> (тематический глагол состояния с суффиксом -э̄-й-):</p>
+<ul>
+<li>1 ед.: видэ̄́<span class="ie"><b>ё̄</b></span> <em class="tr">(я вижу)</em></li>
+<li>2 ед.: видэ̄́<span class="ie"><b>еси</b></span> <em class="tr">(ты видишь)</em></li>
+<li>3 ед.: видэ̄́<span class="ie"><b>ети</b></span> <em class="tr">(он видит)</em></li>
+<li>1 дв.: видэ̄́<span class="ie"><b>ёвэс</b></span> <em class="tr">(мы вдвоём видим)</em></li>
+<li>1 мн.: видэ̄́<span class="ie"><b>ёмос</b></span> <em class="tr">(мы видим)</em></li>
+<li>3 мн.: видэ̄́<span class="ie"><b>ёнти</b></span> <em class="tr">(они видят)</em></li>
+</ul>
+<hr/>
+<h2 id="sec-24-5-прилагательные"><span class="ln">Раздел 5</span>Прилагательные</h2>
+<p><em class="tr">Согласуются с существительными в роде, числе и падеже. Мужской и средний род склоняются как o-основы, женский — как ā-основы.</em></p>
+<h3 id="sec-25-нэвос-новый">нэвос (новый)</h3>
+<div class="table-wrap"><table class="wide">
+<thead>
+<tr>
+<th style="text-align:left">Род</th>
+<th style="text-align:left">Единственное</th>
+<th style="text-align:left">Двойственное</th>
+<th style="text-align:left">Множественное</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Мужской</b></span> (Им.)</td>
+<td style="text-align:left">нэв<span class="ie"><b>ос</b></span> <em class="tr">(новый)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>о̄</b></span> <em class="tr">(два новых)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>о̄с</b></span> <em class="tr">(новые)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Женский</b></span> (Им.)</td>
+<td style="text-align:left">нэв<span class="ie"><b>а̄</b></span> <em class="tr">(новая)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>ай</b></span> <em class="tr">(две новых)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>а̄с</b></span> <em class="tr">(новые)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="ie"><b>Средний</b></span> (Им./Вин.)</td>
+<td style="text-align:left">нэв<span class="ie"><b>ом</b></span> <em class="tr">(новое)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>ой</b></span> <em class="tr">(два новых)</em></td>
+<td style="text-align:left">нэв<span class="ie"><b>а</b></span> <em class="tr">(новые)</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Сравнительная степень: -ё̄с (м., ж.), -ёс (ср.) — к корню: сэ́нё̄с <em class="tr">(старше; лат. senior)</em>, мәжос <em class="tr">(больше; лат. maior; gj → ж, см. 1.5)</em>. Превосходная: -истос — нэ́вистос <em class="tr">(новейший)</em>. Предмет сравнения — в отложительном падеже.</p>
+<hr/>
+<h2 id="sec-26-6-союзы-предлоги-и-частицы"><span class="ln">Раздел 6</span>Союзы, предлоги и частицы</h2>
+<ul>
+<li><span class="ie"><b>эти</b></span> — и <em class="tr">(лат. et)</em></li>
+<li><span class="ie"><b>ч̆э</b></span> — и (постпозитивный, пишется слитно: вълк̆ос э́квос<span class="ie"><b>ч̆э</b></span> <em class="tr">(волк и конь)</em>; лат. <em class="lat">-que</em>)</li>
+<li><span class="ie"><b>вэ</b></span> — или (постпозитивный; лат. <em class="lat">-ve</em>), <span class="ie"><b>ау</b></span> — или</li>
+<li><span class="ie"><b>нэ</b></span> — не; <span class="ie"><b>нэ̄</b></span> — нет; <span class="ie"><b>мэ̄</b></span> — не (запрет: мэ̄ б̣эрэ! <em class="tr">не неси!</em>)</li>
+<li><span class="ie"><b>ат</b></span> — но, а <em class="tr">(лат. at)</em></li>
+<li><span class="ie"><b>ар</b></span> — ведь, ибо</li>
+<li><span class="ie"><b>сэй</b></span> — если <em class="tr">(лат. si)</em></li>
+<li><span class="ie"><b>нӯ</b></span> — теперь <em class="tr">(ст.-сл. нꙑнѣ)</em>; <span class="ie"><b>ну</b></span> — ну, вот</li>
+<li><span class="ie"><b>к̆ом</b></span> — когда <em class="tr">(лат. cum)</em></li>
+<li><span class="ie"><b>к̆од̣эй</b></span> — где <em class="tr">(ст.-сл. къде)</em></li>
+<li><span class="ie"><b>ёд</b></span> — что, потому что</li>
+<li><span class="ie"><b>эн</b></span> — в, на (с местным — где?, с винительным — куда?)</li>
+<li><span class="ie"><b>эг̣с</b></span> — из, от (с отложительным; ст.-сл. <em class="tr">из</em>, лат. <em class="lat">ex</em>)</li>
+<li><span class="ie"><b>ком</b></span> — с, вместе с (с творительным; лат. <em class="lat">cum</em>)</li>
+</ul>
+<hr/>
+<h2 id="sec-27-7-словообразование-и-неологизмы"><span class="ln">Раздел 7</span>Словообразование и неологизмы</h2>
+<h3 id="sec-28-7-1-деривация-от-условного-корня-glew--светить">7.1. Деривация от условного корня <em class="lat">glew-</em> (светить)</h3>
+<p>Чтобы показать механизм, возь́мём условный корень глэв- «светить». По правилам аблаута глагол берёт <span class="ie"><b>э-ступень</b></span>, имена-результаты — <span class="ie"><b>о-ступень</b></span>, отглагольные имена с суффиксами — <strong>нулевую ступень</strong> (при которой полугласный <em class="lat">w</em> становится гласным <em class="lat">u</em>).</p>
+<ul>
+<li><span class="ie"><b>М.р.</b></span> гловос <em class="tr">(свет, сияние)</em>: глов<span class="ie"><b>ос</b></span>, гло́в<span class="ie"><b>осё</b></span> <em class="tr">(света)</em>, глов<span class="ie"><b>о̄й</b></span> <em class="tr">(свету)</em>, глов<span class="ie"><b>ом</b></span>, глов<span class="ie"><b>о̄</b></span> <em class="tr">(светом)</em>, глов<span class="ie"><b>ой</b></span> <em class="tr">(в свете)</em>, глов<span class="ie"><b>о̄д</b></span> <em class="tr">(от света)</em>. Мн.ч.: глов<span class="ie"><b>о̄с</b></span>, глов<span class="ie"><b>о̄м</b></span>, гло́в<span class="ie"><b>об̣ос</b></span>, глов<span class="ie"><b>онс</b></span>, глов<span class="ie"><b>о̄йс</b></span>, гло́в<span class="ie"><b>ойсу</b></span>.</li>
+<li><span class="ie"><b>Ж.р.</b></span> глова̄ <em class="tr">(заря)</em>: глов<span class="ie"><b>а̄</b></span>, глов<span class="ie"><b>а̄с</b></span> <em class="tr">(зари)</em>, глов<span class="ie"><b>а̄й</b></span> <em class="tr">(заре; на заре)</em>, глов<span class="ie"><b>а̄м</b></span> <em class="tr">(зарю)</em>, глов<span class="ie"><b>а̄</b></span> <em class="tr">(за́рёй)</em>, глов<span class="ie"><b>а̄д</b></span> <em class="tr">(от зари)</em>. Мн.ч.: глов<span class="ie"><b>а̄с</b></span>, глов<span class="ie"><b>а̄м</b></span>, гло́в<span class="ie"><b>а̄б̣ос</b></span>, глов<span class="ie"><b>а̄нс</b></span>, гло́в<span class="ie"><b>а̄б̣ис</b></span>, гло́в<span class="ie"><b>а̄су</b></span>.</li>
+<li><span class="ie"><b>Ср.р.</b></span> гловом <em class="tr">(свечение)</em>: глов<span class="ie"><b>ом</b></span>, гло́в<span class="ie"><b>осё</b></span> <em class="tr">(свечения)</em>, глов<span class="ie"><b>о̄й</b></span> <em class="tr">(свечению)</em>, глов<span class="ie"><b>о̄</b></span> <em class="tr">(свечением)</em>. Мн.ч.: глов<span class="ie"><b>а</b></span>, глов<span class="ie"><b>о̄м</b></span>, гло́в<span class="ie"><b>об̣ос</b></span>, глов<span class="ie"><b>о̄йс</b></span>.</li>
+</ul>
+<h3 id="sec-29-7-2-глагол-глэво-свечу-сияю-инф-глэутум">7.2. Глагол: <span class="ie"><b>глэво̄</b></span> (свечу, сияю); инф. глэутум</h3>
+<p><strong>Настоящее время:</strong> глэв<span class="ie"><b>о̄</b></span> <em class="tr">(я сияю)</em>, глэ́в<span class="ie"><b>эси</b></span> <em class="tr">(ты сияешь)</em>, глэ́в<span class="ie"><b>эти</b></span> <em class="tr">(он сияет)</em>, глэ́в<span class="ie"><b>омос</b></span> <em class="tr">(мы сияем)</em>, глэ́в<span class="ie"><b>этэ</b></span> <em class="tr">(вы сияете)</em>, глэ́в<span class="ie"><b>онти</b></span> <em class="tr">(они сияют)</em>.</p>
+<p><span class="ie"><b>Имперфект:</b></span> э́глэв<span class="ie"><b>ом</b></span> <em class="tr">(я сиял)</em>, э́глэв<span class="ie"><b>эс</b></span> <em class="tr">(ты сиял)</em>, э́глэв<span class="ie"><b>эт</b></span> <em class="tr">(он сиял)</em>, э́глэв<span class="ie"><b>омо</b></span> <em class="tr">(мы сияли)</em>, э́глэв<span class="ie"><b>этэ</b></span> <em class="tr">(вы сияли)</em>, э́глэв<span class="ie"><b>онт</b></span> <em class="tr">(они сияли)</em>.</p>
+<h3 id="sec-30-7-3-нулевая-ступень-аблаута-и-суффиксы">7.3. Нулевая ступень аблаута и суффиксы</h3>
+<p>Корень <em class="lat">glew-</em> в нулевой ступени: <em class="lat">glu-</em> → глу-</p>
+<ul>
+<li>глути́с (ж.р.) — <em class="tr">сияние, акт свечения</em></li>
+<li>глутром (ср.р.) — <em class="tr">светильник, то, чем светят</em></li>
+<li>глуто̄́р (м.р.) — <em class="tr">тот, кто светит</em></li>
+<li><strong>Продуктивные суффиксы:</strong> -то̄р (м.р., деятель; лат. <em class="lat">-tor</em>), -тис (ж.р., действие; ст.-сл. <em class="tr">-ть</em>), -тром (ср.р., орудие; лат. <em class="lat">-trum</em>, рус. <em class="tr">ора-ло</em>), -мьн (ср.р., результат; рус. <em class="tr">-мя</em>). Окончание -тум — не суффикс орудия, а инфинитив.</li>
+<li><span class="ie"><b>Неологизмы:</b></span> компю̄́тэрос (компьютер), и́нтэрнэтом (интернет), тэ́лэфоном (телефон).</li>
+</ul>
+<hr/>
+<h2 id="sec-31-8-примеры-текста"><span class="ln">Раздел 8</span>Примеры текста</h2>
+<p><strong>Текст 1: Простое описание</strong></p>
+<blockquote>
+<p><span class="ie"><b>Нӯ эго̄ тэрса̄й ста̄́ё̄. Видэ̄́ё̄ квоньнс, ёй до̄на б̣э́ронти.</b></span>
+<em class="tr">(Теперь я стою на земле. Вижу собак, которые несут дары.)</em>
+<em class="tr">Разбор:</em> квоньнс (<em class="lat">kwonṇs</em>): <span class="ie"><b>кв</b></span> — сочетание <em class="lat">kw</em>; лабиовелярный <em class="lat">q</em> пишется одной буквой с бреве (к̆), ср. нок̆тис (<em class="lat">noqtis</em>) в тексте 6.</p>
+</blockquote>
+<p><strong>Текст 2: Диалог с двойственным числом</strong></p>
+<blockquote>
+<p><span class="ie"><b>— Ч̆ис до̄на б̣э́рэтэс? — Вэ̄ до̄на тэрса̄й б̣э́ровэс.</b></span>
+<em class="tr">(— Кто (вы двое) несёт дары? — Мы вдвоём несём дары земле.)</em>
+<em class="tr">Разбор:</em> Ч̆ис (<em class="lat">qis</em>): перед <em class="lat">i</em> лабиовелярный палатализуется (ч̆); ср. К̆ом (<em class="lat">qom</em>) в тексте 6, где перед <em class="lat">o</em> стоит к̆. Односложные Ч̆ис и Вэ̄ пишутся без знака ударения.</p>
+</blockquote>
+<p><strong>Текст 3: Прошедшее время</strong></p>
+<blockquote>
+<p><span class="ie"><b>Вълк̆ос мәгнос э̄ст. Сос до̄на эн домом э́б̣эрэт.</b></span>
+<em class="tr">(Волк был большим. Он нёс дары в дом.)</em></p>
+</blockquote>
+<p><strong>Текст 4: Средний род</strong></p>
+<blockquote>
+<p><span class="ie"><b>Гра̄но́м сва̄ду́ эсти. Та̄ гра̄на́ нэва сэнти.</b></span>
+<em class="tr">(Зерно сладкое. Те зёрна новые.)</em></p>
+</blockquote>
+<p><strong>Текст 5: Демонстрация буквы «е» (MIE <em class="lat">je</em>)</strong></p>
+<blockquote>
+<p><span class="ie"><b>Де̄ус мәгнос эсти; трэес ӂэна̄с солва̄й тэрса̄й ка́нонти.</b></span>
+<em class="tr">(Небо велико; три женщины поют по всей земле.)</em>
+<em class="tr">Разбор:</em> Де̄ус (<em class="lat">Djēus</em>), трэес (<em class="lat">trejes</em>): <span class="ie"><b>е</b></span> после согласной и после гласной одинаково означает <em class="lat">je</em>, <span class="ie"><b>е̄</b></span> — долгое <em class="lat">jē</em>. Де̄ус — один слог (<em class="lat">ēu</em> — дифтонг), поэтому знак ударения не ставится.</p>
+</blockquote>
+<p><strong>Текст 6: Множественное число и аблаут</strong></p>
+<blockquote>
+<p><span class="ie"><b>К̆ом нок̆тис эсти, са̄вэл нэ глэ́вэти, ат стэрэс глэ́вонти.</b></span>
+<em class="tr">(Когда ночь, солнце не сияет, но звёзды сияют.)</em></p>
+</blockquote>
+<p><strong>Текст 7: Отглагольные существительные</strong></p>
+<blockquote>
+<p><span class="ie"><b>Тӯ глутром патрэ́й ди́до̄си, ар тод глутром мэга глэ́вэти.</b></span>
+<em class="tr">(Ты да́ёшь светильник отцу, ибо тот светильник светит сильно.)</em></p>
+</blockquote>
+<p><strong>Текст 8: Сочетания с j</strong></p>
+<blockquote>
+<p><span class="ie"><b>Три́тёс б̣ра̄тэ̄р г̣о́стёс домом видэ̄́ети.</b></span>
+<em class="tr">(Третий брат видит дом гостя.)</em>
+<em class="tr">Разбор:</em> три́тёс (<em class="lat">tritjos</em>), г̣о́стёс (<em class="lat">ghostjos</em>): сочетания <em class="lat">tj, stj</em> пишутся как согласный + йотированная гласная. С <em class="lat">j</em> сливаются только заднеязычные и лабиовелярные: пискис (<em class="lat">pískjos</em>) «рыбы», мәжос (<em class="lat">megjōs</em>) «больше».</p>
+</blockquote>
+<hr/>
+<h2 id="sec-32-9-расширенный-словарик"><span class="ln">Раздел 9</span>Расширенный словарик</h2>
+<h3 id="sec-33-существительные">Существительные</h3>
+<ul>
+<li>вълк̆ос (<em class="lat">wḷqos</em>) — волк</li>
+<li>тэрса̄ (<em class="lat">tersā</em>) — земля; поэт. д̣эг̣ом (<em class="lat">dheghōm</em>)</li>
+<li>до̄ном (<em class="lat">dōnom</em>) — дар</li>
+<li>домос (<em class="lat">domos</em>) — дом</li>
+<li>войкос (<em class="lat">woikos</em>) — селение, деревня (ст.-сл. <em class="tr">вьсь</em>)</li>
+<li>пәтэ̄р (<em class="lat">patḗr</em>) — отец</li>
+<li>ма̄тэ̄́р (<em class="lat">mātḗr</em>) — мать</li>
+<li>б̣ра̄тэ̄р (<em class="lat">bhrātēr</em>) — брат</li>
+<li>свэсо̄р (<em class="lat">swesōr</em>) — сестра</li>
+<li>сӯну́с (<em class="lat">sūnús</em>) — сын</li>
+<li>д̣угтэ̄р (<em class="lat">dhugatḗr</em>) — дочь</li>
+<li>ак̆а̄ (<em class="lat">aqā</em>) — вода; также водър (<em class="lat">wodṛ</em>)</li>
+<li>эг̆нис (<em class="lat">ógnis</em>) — огонь</li>
+<li>са̄вэл (<em class="lat">sāwel</em>) — солнце</li>
+<li>лоуксна̄ (<em class="lat">louksnā</em>) — луна; мэ̄нсис (<em class="lat">mēnsis</em>) — месяц</li>
+<li>динос (<em class="lat">dhinos</em>) — день</li>
+<li>нок̆тис (<em class="lat">noqtis</em>) — ночь</li>
+<li>стэ̄р (<em class="lat">astḗr</em>) — звезда</li>
+<li>кво̄н (<em class="lat">kwōn</em>) — собака (род. куно́с)</li>
+<li>гэну (<em class="lat">genu</em>) — колено</li>
+<li>г̣эйма̄ (<em class="lat">gheimā</em>) — зима</li>
+<li>мъртис (<em class="lat">mṛtis</em>) — смерть</li>
+</ul>
+<h3 id="sec-34-прилагательные">Прилагательные</h3>
+<ul>
+<li>нэвос (<em class="lat">newos</em>) — новый</li>
+<li>мәгнос (<em class="lat">mégos</em>) — большой</li>
+<li>паулос (<em class="lat">páuros</em>) — малый</li>
+<li>сэнэ̄кс (<em class="lat">sénos</em>) — старый</li>
+<li>двэнос (<em class="lat">dwenos</em>) — хороший (стар. лат. <em class="lat">duenos</em> &gt; <em class="lat">bonus</em>)</li>
+<li>дус (<em class="lat">málos</em>) — плохой</li>
+<li>алб̣ос (<em class="lat">albhos</em>) — белый</li>
+<li>кърснос (<em class="lat">qṛsnos</em>) — чёрный</li>
+<li>лэуко́с (<em class="lat">leukós</em>) — светлый, яркий</li>
+</ul>
+<h3 id="sec-35-глаголы">Глаголы</h3>
+<ul>
+<li>эсми (<em class="lat">esmi</em>) — быть</li>
+<li>б̣эро̄ (<em class="lat">bherō</em>) — нести</li>
+<li>видэ̄́ё̄ (<em class="lat">widējō</em>) — видеть</li>
+<li>г̣эусо̄ (<em class="lat">klewō</em>) — слышать (ст.-сл. <em class="tr">слоути</em>)</li>
+<li>ди́до̄ми (<em class="lat">dídōmi</em>) — давать</li>
+<li>ста̄́ё̄ (<em class="lat">stājō</em>) — стоять</li>
+<li>аго̄ (<em class="lat">agō</em>) — вести, гнать</li>
+<li>эдми (<em class="lat">edmi</em>) — есть (кушать)</li>
+<li>пибо̄ (<em class="lat">pibō</em>) — пить</li>
+<li>эйми (<em class="lat">eimi</em>) — идти</li>
+<li>глэво̄ (<em class="lat">glewō</em>) — светить (условный корень)</li>
+</ul>
+<h3 id="sec-36-числительные">Числительные</h3>
+<ul>
+<li>ойнос (<em class="lat">oinos</em>) — один</li>
+<li>дво̄у (<em class="lat">dwō</em>) — два</li>
+<li>трэес (<em class="lat">trejes</em>) — три</li>
+<li>ч̆этворэс (<em class="lat">qetwores</em>) — четыре</li>
+<li>пэнч̆э (<em class="lat">penqe</em>) — пять</li>
+<li>свэкс (<em class="lat">sweks</em>) — шесть</li>
+<li>сэптъм (<em class="lat">septṃ</em>) — семь</li>
+<li>окто̄у (<em class="lat">oktṓ</em>) — восемь</li>
+<li>нэвьн (<em class="lat">newṇ</em>) — девять</li>
+<li>дэкъм (<em class="lat">dekṃ</em>) — десять</li>
+</ul>
+<hr/>
+<h2 id="sec-37-10-практические-упражнения"><span class="ln">Раздел 10</span>Практические упражнения</h2>
+<p><strong>Переведите на MIE:</strong></p>
+<ol>
+<li>Мы вдвоём видим двух больших волков.</li>
+<li>Ты да́ёшь воду двум отцам.</li>
+<li>Те волки были маленькими.</li>
+<li>Две звезды светят.</li>
+<li>Новое свечение видно на земле.</li>
+</ol>
+<p><em class="tr">Ответы:</em></p>
+<ol>
+<li>Вэ̄ дво̄у мәгн<span class="ie"><b>о̄</b></span> вълк̆<span class="ie"><b>о̄</b></span> видэ̄́<span class="ie"><b>ёвэс</b></span>.</li>
+<li>Тӯ ак̆<span class="ie"><b>а̄м</b></span> дво<span class="ie"><b>б̣я̄м</b></span> пәтър<span class="ie"><b>б̣о́с</b></span> ди́до̄<span class="ie"><b>си</b></span>. <em class="tr">(в косвенных падежах двойственного числа существительное стоит во множественном)</em></li>
+<li>Той вълк̆<span class="ie"><b>о̄с</b></span> паул<span class="ie"><b>о̄с</b></span> э̄с<span class="ie"><b>ьнт</b></span>.</li>
+<li>Двай стэр<span class="ie"><b>э</b></span> глэ́в<span class="ie"><b>этэс</b></span>.</li>
+<li>Нэв<span class="ie"><b>ом</b></span> глов<span class="ie"><b>ом</b></span> тэрс<span class="ie"><b>а̄й</b></span> видэ̄́<span class="ie"><b>етор</b></span>. <em class="tr">(медиальный залог: «видится»)</em></li>
+</ol>
+<hr/>
+<h2 id="sec-38-11-обоснование-обратимости"><span class="ln">Раздел 11</span>Обоснование обратимости</h2>
+<p>Алгоритм обратного перевода (кириллица → латинская запись MIE) работает по строгому приоритету:</p>
+<ol>
+<li>Видишь <span class="ie"><b>е</b></span> (в любой позиции) → пиши <strong>je</strong>; <span class="ie"><b>е̄</b></span> → <strong>jē</strong> (напр., Де̄ус → <em class="lat">Djēus</em>, трэес → <em class="lat">trejes</em>)</li>
+<li>Видишь <span class="ie"><b>я, ё, ю</b></span> → пиши <strong>ja, jo, ju</strong>; <span class="ie"><b>я̄, ё̄, ю̄</b></span> → <strong>jā, jō, jū</strong></li>
+<li>Видишь <span class="ie"><b>ч, ж, ж̣</b></span> → пиши <strong>kj, gj, ghj</strong> (спэчо̄ → <em class="lat">spekjō</em>)</li>
+<li>Видишь <span class="ie"><b>ч̆, ӂ, ӂ̣</b></span>: перед <strong>э, и</strong> (и <span class="ie"><b>э̄, ӣ</b></span>) → <strong>q, c, ch</strong>; перед <strong>а, о, у</strong> (и их долгими) → <strong>qj, cj, chj</strong></li>
+<li>Видишь <span class="ie"><b>к̆, г̆, г̣̆</b></span> → пиши <strong>q, c, ch</strong></li>
+<li>Видишь <span class="ie"><b>б̣, д̣, г̣, т̣, к̣</b></span> → пиши <strong>bh, dh, gh, th, kh</strong></li>
+<li>Видишь <span class="ie"><b>ъ</b></span> перед <strong>р, л, м</strong> → пиши <strong>ṛ, ḷ, ṃ</strong>; <span class="ie"><b>ьн</b></span> → <strong>ṇ</strong>; <span class="ie"><b>ѥ</b></span> в начале слова → слоговой сонант (<span class="ie"><b>ѥр</b></span> → <strong>ṛ</strong>, <span class="ie"><b>ѥн</b></span> → <strong>ṇ</strong> и т. д.)</li>
+<li>Видишь <span class="ie"><b>й</b></span> после гласной перед согласной или в конце слова → <strong>i</strong> (второй элемент дифтонга); иначе → <strong>j</strong></li>
+<li>Видишь макрон → долгая гласная (<span class="ie"><b>а̄</b></span> → <strong>ā</strong> и т. д.); <span class="ie"><b>э</b></span> → <strong>e</strong>; <span class="ie"><b>ә</b></span> → <strong>ə</strong></li>
+<li>Видишь знак ударения → ударный слог. Ударение в MIE одно; акут — типографский знак, который ставится не всегда. Обычно он опускается на пенультиме и в односложных словах, если ударение понятно; в словарной форме без знака ударение подразумевается. Если ударение падает на ё/ё̄, знак может быть опущен даже вне пенультимы; если же ударение падает на другую гласную, она помечается явным акутом. Без знака многосложное слово читается с ударением на пенультиме; односложное — без знака.</li>
+</ol>
+<p>Прямой перевод (латинская запись → кириллица) выполняется в порядке, описанном в 1.5: палатализация перед <em class="lat">j</em> → лабиовелярные перед <em class="lat">e, ē, i, ī</em> → остальные придыхательные → сжатие <em class="tr">й</em> с гласными (1.7) → слоговые сонанты (1.2) → ударение (1.8). Поэтому сочетание «к + е» в этой записи не встречается: <em class="lat">kje</em> даёт <span class="ie"><b>чэ</b></span>, <em class="lat">ke</em> — <span class="ie"><b>кэ</b></span>.</p>
+<p><strong>Единственная теоретическая неоднозначность.</strong> Поскольку <em class="lat">j</em> после лабиовелярного поглощается, <em class="lat">qje, qjē, qji, qjī</em> и <em class="lat">qe, qē, qi, qī</em> записываются одинаково (ч̆э, ч̆э̄, ч̆и, ч̆ӣ); то же относится к <em class="lat">c, ch</em>. В проверенных данных II.2 (3814 заголовков) и в приложенном тексте Grammar 3rd ed. сочетаний <em class="lat">qj, cj, chj</em> перед <em class="lat">e, ē, i, ī</em> не найдено. В II.2 встретились <em class="lat">ml̥qjō</em> «мучить», <em class="lat">pr̥qjō</em> «чистить», <em class="lat">soqjós</em> «союзный» — все перед <em class="lat">o</em>; <em class="lat">cj</em> и <em class="lat">chj</em> в заголовках не встретились. В тексте Grammar есть <em class="lat">qja</em> (перед <em class="lat">a</em>) и <em class="lat">oqjō</em> (перед <em class="lat">ō</em>), но не перед <em class="lat">e, i</em>. Поэтому неоднозначность остаётся теоретической для проверенного материала. У простых заднеязычных её нет: перед <em class="lat">e, i</em> они не палатализуются, так что <strong>чэ, чи</strong> — всегда <em class="lat">kje, kji</em>.</p>
+<p>Остальные соответствия взаимно однозначны: <span class="ie"><b>э</b></span> ≠ <span class="ie"><b>е</b></span>; <span class="ie"><b>к</b></span>, <span class="ie"><b>к̆</b></span>, <span class="ie"><b>ч</b></span>, <span class="ie"><b>ч̆</b></span> — четыре разные записи; <span class="ie"><b>кв</b></span> — всегда <em class="lat">kw</em>; <span class="ie"><b>ъ, ь, ѥ</b></span> — только в слоговых сонантах.</p>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5810844194916b7',t:'MTc5NDI3MTUwNA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5810844194916b7',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
